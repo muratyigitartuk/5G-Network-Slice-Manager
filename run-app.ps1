@@ -1,0 +1,24 @@
+# Define the absolute path to the frontend directory
+$frontendPath = "C:\Users\mur4t\Desktop\nwslicing\src\frontend"
+
+# Check if the path exists
+if (Test-Path -Path $frontendPath) {
+    # Navigate to the frontend directory
+    Set-Location -Path $frontendPath
+
+    # Set the port to avoid conflicts
+    $env:PORT = 3001
+
+    # Install react-scripts if needed
+    if (-not (Test-Path -Path "$frontendPath\node_modules\.bin\react-scripts.cmd")) {
+        Write-Host "Installing react-scripts..."
+        npm install --legacy-peer-deps
+    }
+
+    # Start the React application using npx
+    Write-Host "Starting React application on port 3001..."
+    npx react-scripts start
+} else {
+    Write-Error "Frontend directory not found at: $frontendPath"
+    exit 1
+} 

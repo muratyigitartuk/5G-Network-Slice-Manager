@@ -1,0 +1,103 @@
+{
+  "common": {
+    "create": "Erstellen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "view": "Ansehen",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "close": "Schließen",
+    "refresh": "Aktualisieren",
+    "loading": "Wird geladen...",
+    "noData": "Keine Daten verfügbar",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "start": "Starten",
+    "stop": "Stoppen",
+    "restart": "Neu starten",
+    "status": "Status",
+    "settings": "Einstellungen",
+    "details": "Details",
+    "actions": "Aktionen",
+    "name": "Name",
+    "type": "Typ",
+    "created": "Erstellt am"
+  },
+  "vnf": {
+    "title": "VNF-Verwaltung",
+    "createVNF": "VNF erstellen",
+    "noVNFs": "Keine VNFs gefunden",
+    "createFirstVNF": "Erstellen Sie Ihre erste VNF, um mit der Netzwerkfunktionsvirtualisierung zu beginnen.",
+    "total": "Gesamte VNFs",
+    "running": "Laufende VNFs",
+    "stopped": "Angehaltene VNFs",
+    "healthy": "Gesunde VNFs",
+    "resources": "Ressourcen",
+    "health": "Gesundheit",
+    "type_firewall": "Firewall",
+    "type_load_balancer": "Lastverteiler",
+    "type_ids": "Einbruchserkennungssystem",
+    "type_router": "Virtueller Router",
+    "type_nat": "NAT-Gateway",
+    "type_vpn": "VPN-Gateway",
+    "type_proxy": "Proxy-Server",
+    "type_dns": "DNS-Server",
+    "port": "Port",
+    "cpu": "CPU-Kerne",
+    "memory": "Speicher (MB)",
+    "storage": "Speicherplatz (GB)",
+    "resourceAllocation": "Ressourcenzuweisung",
+    "configuration": "Konfiguration",
+    "generalInfo": "Allgemeine Informationen",
+    "performanceMetrics": "Leistungskennzahlen",
+    "createSuccess": "VNF erfolgreich erstellt",
+    "deleteSuccess": "VNF erfolgreich gelöscht",
+    "startSuccess": "VNF erfolgreich gestartet",
+    "stopSuccess": "VNF erfolgreich gestoppt",
+    "restartSuccess": "VNF erfolgreich neu gestartet",
+    "createError": "Fehler beim Erstellen der VNF",
+    "deleteError": "Fehler beim Löschen der VNF",
+    "actionError": "Fehler bei der Ausführung der Aktion auf der VNF",
+    "validation": {
+      "nameRequired": "VNF-Name ist erforderlich",
+      "nameLength": "VNF-Name muss mindestens 3 Zeichen lang sein",
+      "typeRequired": "VNF-Typ ist erforderlich",
+      "cpuMin": "CPU muss mindestens 1 Kern haben",
+      "memoryMin": "Speicher muss mindestens 128 MB sein",
+      "storageMin": "Speicherplatz muss mindestens 1 GB sein"
+    }
+  },
+  "slice": {
+    "title": "Netzwerk-Slices",
+    "createSlice": "Slice erstellen",
+    "noSlices": "Keine Netzwerk-Slices gefunden",
+    "createFirstSlice": "Erstellen Sie Ihren ersten Netzwerk-Slice, um zu beginnen."
+  },
+  "service": {
+    "title": "Service-Verkettung",
+    "createChain": "Kette erstellen",
+    "noChains": "Keine Service-Ketten gefunden"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "summary": "Zusammenfassung",
+    "recentActivity": "Letzte Aktivitäten",
+    "quickStats": "Schnellstatistiken",
+    "alerts": "Warnungen"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "theme": "Thema",
+    "darkMode": "Dunkelmodus",
+    "lightMode": "Hellmodus",
+    "notifications": "Benachrichtigungen",
+    "account": "Konto",
+    "security": "Sicherheit",
+    "api": "API-Einstellungen"
+  },
+  "language": {
+    "en": "Englisch",
+    "de": "Deutsch"
+  }
+} 

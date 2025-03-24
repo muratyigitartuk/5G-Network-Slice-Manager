@@ -1,0 +1,99 @@
+api:
+  host: "0.0.0.0"
+  port: 8000
+
+dashboard:
+  host: "0.0.0.0"
+  port: 8050
+
+simulation:
+  num_nodes: 10
+  initial_slices: 2
+  update_interval: 5
+  topology:
+    nodes:
+      - id: "node1"
+        capacity:
+          cpu: 100
+          memory: 1024000
+          bandwidth: 10000
+      - id: "node2"
+        capacity:
+          cpu: 100
+          memory: 1024000
+          bandwidth: 10000
+      - id: "node3"
+        capacity:
+          cpu: 100
+          memory: 1024000
+          bandwidth: 10000
+    links:
+      - source: "node1"
+        target: "node2"
+        latency: 5
+        bandwidth: 10000
+      - source: "node2"
+        target: "node3"
+        latency: 5
+        bandwidth: 10000
+
+vnf:
+  types:
+    - id: "firewall"
+      image: "nginx:latest"
+      resource_requirements:
+        cpu: 1.0
+        memory: 512.0
+        bandwidth: 100.0
+      config:
+        ports:
+          "80/tcp": 8080
+        volumes: []
+    - id: "load-balancer"
+      image: "haproxy:latest"
+      resource_requirements:
+        cpu: 2.0
+        memory: 1024.0
+        bandwidth: 500.0
+      config:
+        ports:
+          "80/tcp": 8081
+        volumes: []
+
+slices:
+  templates:
+    - name: "eMBB-Slice"
+      qos_requirements:
+        latency_ms: 20.0
+        bandwidth_mbps: 1000.0
+        reliability: 99.9
+        isolation_level: "shared"
+      service_type: "eMBB"
+    - name: "URLLC-Slice"
+      qos_requirements:
+        latency_ms: 1.0
+        bandwidth_mbps: 100.0
+        reliability: 99.999
+        isolation_level: "isolated"
+      service_type: "URLLC"
+    - name: "mMTC-Slice"
+      qos_requirements:
+        latency_ms: 100.0
+        bandwidth_mbps: 10.0
+        reliability: 99.0
+        isolation_level: "shared"
+      service_type: "mMTC"
+
+logging:
+  level: "INFO"
+  file: "logs/nwslicing.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+monitoring:
+  interval: 5
+  metrics:
+    - "cpu_utilization"
+    - "memory_utilization"
+    - "bandwidth_utilization"
+    - "latency"
+    - "reliability" 

@@ -1,0 +1,103 @@
+{
+  "common": {
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "refresh": "Refresh",
+    "loading": "Loading...",
+    "noData": "No data available",
+    "search": "Search",
+    "filter": "Filter",
+    "start": "Start",
+    "stop": "Stop",
+    "restart": "Restart",
+    "status": "Status",
+    "settings": "Settings",
+    "details": "Details",
+    "actions": "Actions",
+    "name": "Name",
+    "type": "Type",
+    "created": "Created"
+  },
+  "vnf": {
+    "title": "VNF Management",
+    "createVNF": "Create VNF",
+    "noVNFs": "No VNFs found",
+    "createFirstVNF": "Create your first VNF to get started with network function virtualization.",
+    "total": "Total VNFs",
+    "running": "Running VNFs",
+    "stopped": "Stopped VNFs",
+    "healthy": "Healthy VNFs",
+    "resources": "Resources",
+    "health": "Health",
+    "type_firewall": "Firewall",
+    "type_load_balancer": "Load Balancer",
+    "type_ids": "Intrusion Detection System",
+    "type_router": "Virtual Router",
+    "type_nat": "NAT Gateway",
+    "type_vpn": "VPN Gateway",
+    "type_proxy": "Proxy Server",
+    "type_dns": "DNS Server",
+    "port": "Port",
+    "cpu": "CPU Cores",
+    "memory": "Memory (MB)",
+    "storage": "Storage (GB)",
+    "resourceAllocation": "Resource Allocation",
+    "configuration": "Configuration",
+    "generalInfo": "General Information",
+    "performanceMetrics": "Performance Metrics",
+    "createSuccess": "VNF created successfully",
+    "deleteSuccess": "VNF deleted successfully",
+    "startSuccess": "VNF started successfully",
+    "stopSuccess": "VNF stopped successfully",
+    "restartSuccess": "VNF restarted successfully",
+    "createError": "Failed to create VNF",
+    "deleteError": "Failed to delete VNF",
+    "actionError": "Failed to perform action on VNF",
+    "validation": {
+      "nameRequired": "VNF name is required",
+      "nameLength": "VNF name must be at least 3 characters",
+      "typeRequired": "VNF type is required",
+      "cpuMin": "CPU must be at least 1 core",
+      "memoryMin": "Memory must be at least 128 MB",
+      "storageMin": "Storage must be at least 1 GB"
+    }
+  },
+  "slice": {
+    "title": "Network Slices",
+    "createSlice": "Create Slice",
+    "noSlices": "No network slices found",
+    "createFirstSlice": "Create your first network slice to get started."
+  },
+  "service": {
+    "title": "Service Chaining",
+    "createChain": "Create Chain",
+    "noChains": "No service chains found"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "summary": "Summary",
+    "recentActivity": "Recent Activity",
+    "quickStats": "Quick Stats",
+    "alerts": "Alerts"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "notifications": "Notifications",
+    "account": "Account",
+    "security": "Security",
+    "api": "API Settings"
+  },
+  "language": {
+    "en": "English",
+    "de": "German"
+  }
+} 
