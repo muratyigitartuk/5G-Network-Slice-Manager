@@ -291,7 +291,7 @@ The application follows a unidirectional data flow pattern to ensure predictable
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/network-slicing-platform.git
+   git clone https://github.com/muratyigitartuk/network-slicing-platform.git
    cd network-slicing-platform
    ```
 
